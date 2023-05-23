@@ -1,0 +1,34 @@
+
+<br><br><br>
+<br>
+<div class="container">
+<table class="table table-dark table-striped">
+   
+    <thead>
+        <tr>
+        
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Mobile</th>
+        <th>Email Id</th>
+        <th>Password</th>
+        </tr>  
+    </thead>
+    <tbody>
+        <tr *ngFor="let cust1 of custs">
+           
+            <td>{{cust1.customerfname}}</td>
+            <td>{{cust1.customerlname}}</td>
+            <td>{{cust1.customermobile}}</td>
+            <td>{{cust1.customeremailid}}</td>
+            <td>{{cust1.customerpassword}}</td>
+            <!-- <td><button (click)="deleteToDo(cust.id)" class="btn btn-warning">Delete</button></td>
+            <td><button (click)="updateToDo(cust.id)" class="btn btn-success">Update</button></td> -->
+        </tr>
+
+    </tbody>
+</table>
+</div>
+<br>
+<br>
+<!-- <button (click)="addToDo()" class="btn btn-success">AddRecord</button> -->

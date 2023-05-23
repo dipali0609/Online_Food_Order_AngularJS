@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Food Order App - Home</title>
+</head>
+<body>
+  
+  <section class="hero bg-primary text-white text-center py-5">
+    <h1 class="display-4">Delicious Food Delivered to Your Doorstep</h1>
+    <p class="lead">Order your favorite meals online and enjoy hassle-free delivery</p>
+    <a href="\Chome"><h5>Go To Home</h5></a>
+   
+  </section>
+  <tr ></tr>
+  <h2 class="text-center mb-4">Veg Dishes</h2>
+  <div class="card" *ngFor="let item1 of items">
+  <section class="featured py-5">
+    <div class="container">
+      <section class="featured py-5">
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+            <img [attr.src]=item1.image  class="card-img-top" alt="Featured Dish"/> 
+            <div class="card-body">
+              <h5 class="card-title">{{item1.itemName}}</h5>
+              <p class="card-text">{{item1.cost}}</p>
+          
+              <td><button (click)="updateitem(item1.itemId)" class="btn btn-success">Add To Cart</button>
+              <!-- <td><button (click)="deleteitem(item1.itemId)" class="btn btn-warning">Delete</button>  -->
+            </div>
+          </div>
+        </div>
+    </section>
+
+ 
+      
+  
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      
+        <!-- <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img src="https://myfoodstory.com/wp-content/uploads/2022/01/Paneer-Lababdar-3.jpg" class="card-img-top" alt="Featured Dish">
+            <div class="card-body">
+              <h5 class="card-title"> Matar Paneer Lababdaar</h5>
+              <p class="card-text">250</p>
+              <a href="/mycarttable" class="btn btn-primary">Add To cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2022/03/aloo-gobi-recipe-500x375.jpg" class="card-img-top" alt="Featured Dish">
+            <div class="card-body">
+              <h5 class="card-title">Gobhi Aloo</h5>
+              <p class="card-text">250</p>
+              <a href="/mycarttable" class="btn btn-primary">Add To cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="featured py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Veg Dishes</h2>
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img src="https://maunikagowardhan.co.uk/wp-content/uploads/2011/11/Chilli-Paneer-scaled.jpg" class="card-img-top" alt="Featured Dish">
+            <div class="card-body">
+              <h5 class="card-title"> Paneer Chilli</h5>
+              <p class="card-text">300</p>
+              <a href="/mycarttable" class="btn btn-primary">Add To cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img src="https://zaykarecipes.com/wp-content/uploads/2017/11/soya-chiili-manchurian.jpg" class="card-img-top" alt="Featured Dish">
+            <div class="card-body">
+              <h5 class="card-title">Soya chilli</h5>
+              <p class="card-text">{{foodp5}}</p>
+              <a href="/mycarttable" class="btn btn-primary">Add To cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img src="https://i.ndtvimg.com/i/2015-10/matar-paneer_625x350_51443676633.jpg" class="card-img-top" alt="Featured Dish">
+            <div class="card-body">
+              <h5 class="card-title">{{food6}}</h5>
+              <p class="card-text">{{foodp6}}</p>
+              <a href="/mycarttable" class="btn btn-primary">Add To cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="featured py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Veg Dishes</h2>
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Bambayya_Pav_bhaji.jpg" class="card-img-top" alt="Featured Dish">
+            <div class="card-body">
+              <h5 class="card-title">Pav bhaji</h5>
+              <p class="card-text">150 </p>
+              <a href="/order" class="btn btn-primary">Order Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img src="https://www.awesomecuisine.com/wp-content/uploads/2008/02/idli_sambar.jpg" class="card-img-top" alt="Featured Dish">
+            <div class="card-body">
+              <h5 class="card-title">Idali Sambar</h5>
+              <p class="card-text">250</p>
+              <a href="/order" class="btn btn-primary">Order Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img src="https://i.ndtvimg.com/i/2015-10/matar-paneer_625x350_51443676633.jpg" class="card-img-top" alt="Featured Dish">
+            <div class="card-body">
+              <h5 class="card-title"> Gobhi Aloo</h5>
+              <p class="card-text">250</p>
+              <a href="/order" class="btn btn-primary">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="featured py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Veg Dishes</h2>
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img src="https://c.ndtvimg.com/2018-11/tlonj9dg_gobhi-aloo_625x300_23_November_18.PNG" class="card-img-top" alt="Featured Dish">
+            <div class="card-body">
+              <h5 class="card-title">Gobi Manchurian</h5>
+              <p class="card-text">300</p>
+              <a href="/order" class="btn btn-primary">Order Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img src="https://cdn.tarladalal.com/members/9306/procstepimgs/tandoori-paneer-tikka-11-188162.jpg" class="card-img-top" alt="Featured Dish">
+            <div class="card-body">
+              <h5 class="card-title">Tandoori Paneer Tikka</h5>
+              <p class="card-text">250</p>
+              <a href="/order" class="btn btn-primary">Order Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img src="https://candidtreat.com/wp-content/uploads/2021/01/Nizamihandi-scaled-1-958x575.jpeg" class="card-img-top" alt="Featured Dish">
+            <div class="card-body">
+              <h5 class="card-title">Veg Handi</h5>
+              <p class="card-text">400</p>
+              <a href="/order" class="btn btn-primary">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    </div> -->
+  

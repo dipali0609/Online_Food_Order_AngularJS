@@ -1,0 +1,49 @@
+<section class="vh-100">
+    <div class="container-fluid h-custom">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-md-9 col-lg-6 col-xl-5">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+            class="img-fluid" alt="Sample image">
+        </div>
+        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+            <div style="text-align: center">
+                <h1>{{message}}</h1>
+            </div>
+          <form>
+            <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+            
+            </div>
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+                <input required ngModel type="text" #name="ngModel" [(ngModel)]="con.name" name="name" id="customerfname"
+                class="form-control phone" maxlength="28" placeholder="Enter your fullname..." />      
+              <label class="form-label" for="form3Example3">Name</label>
+            </div>
+  
+            <!-- Password input -->
+            <div class="form-outline mb-3">
+                <input required ngModel type="text" #name="ngModel" [(ngModel)]="con.email" name="email" id="email"
+                class="form-control phone" maxlength="28" placeholder="Enter your email" />     
+              <label class="form-label" for="form3Example4">Email id</label>
+            </div>
+
+            <div class="form-outline mb-3">
+                <input required ngModel type="text" #name="ngModel" [(ngModel)]="con.message" name="message" id="message"
+                class="form-control phone" maxlength="28" placeholder="Enter your Message" />          
+              <label class="form-label" for="form3Example4">Message</label>
+            </div> 
+            <div class="form-group">
+                <input class="btn btn-success" type="submit" name="submit_reg" value="contact" (click)="contactus()" >
+            </div>
+            
+          </form>
+        </div>
+      </div>
+    </div>
+  
+  </section>
+  
+
+
+
+    

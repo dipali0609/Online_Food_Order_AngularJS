@@ -1,0 +1,61 @@
+
+<html>
+<body>
+<br><br><br>
+<a href="/Chome"><h5>Go to Dashboard</h5></a>
+<form align="center">
+
+    <!-- Email input -->
+    <div class="form-outline mb-4">
+      <label class="form-label" for="form1Example1">Area::</label>
+      <input required ngModel type="text" #name="ngModel" [(ngModel)]="addr.area" name="area" id="area"
+                 maxlength="28" placeholder="Enter your area" />  
+    </div>
+  <br>
+    <!-- Password input -->
+    <div class="form-outline mb-4">
+      <label class="form-label" for="form1Example2">City::</label>
+      <input required ngModel type="text" #name="ngModel" [(ngModel)]="addr.city" name="city" id="city"
+                maxlength="28" placeholder="Enter your city" />  
+    </div>
+    <br>
+    <div class="form-outline mb-4">
+        <label class="form-label" for="form1Example2">Country::</label>
+        <input required ngModel type="text" #name="ngModel" [(ngModel)]="addr.country" name="country" id="country"
+                   maxlength="28" placeholder="Enter your country" />  
+      </div>
+      <br>
+      
+      <div class="form-outline mb-4">
+        <label class="form-label" for="form1Example2">Pincode::</label>
+        <input required ngModel type="text" #name="ngModel" [(ngModel)]="addr.pincode" name="Pincode" id="pincode"
+                   maxlength="28" placeholder="Enter your pincode" />  
+      </div>
+      <br>
+      <div class="form-outline mb-4">
+        <label class="form-label" for="form1Example2">State::</label>
+        <input required ngModel type="text" #name="ngModel" [(ngModel)]="addr.state" name="state" id="state"
+                   maxlength="28" placeholder="Enter your state" />  
+      </div>
+  
+      <br>
+  
+    
+    <!-- Submit button -->
+    <div class="form-group">
+        <input class="btn btn-success" type="submit" name="submit_reg" value="Order" (click)="Order()" >
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </form>
+
+
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+
+<h1 class="text-center">Online Food Order</h1>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <!-- <div>
+            <a href="https://www.edubridgeindia.com/login.com">Edubridge Learning</a>
+        </div> -->
+        <br>
+        <ul class="navbar-nav">
+            <li>
+                <a routerLink="/" class="nav-link">Home</a>
+            </li>
+            <li>
+                <a routerLink="/about" class="nav-link">About</a>
+            </li>
+            <li class="dropdown"><a class="dropdown-toggle"  class="nav-link" data-toggle="dropdown" href="#">AllCategory</a>
+                <ul class="dropdown-menu">
+                  <li><a routerLink="/vegC">Veg</a></li>
+                  <li><a href="#">Non-Veg</a></li>
+                </ul>
+            </li>
+            <li>
+                <a routerLink="/todos" class="nav-link">All FoodItems</a>
+            </li>
+            <li class="dropdown"><a class="dropdown-toggle"  class="nav-link" data-toggle="dropdown" href="#">Login</a>
+                <ul class="dropdown-menu">
+                  <li><a routerLink="/login">Customer Login</a></li>
+                  <li><a href="#">Admin Login</a></li>
+                </ul>
+            </li>
+            <li>
+                <a routerLink="/registration" class="nav-link">Registration</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav navbar-collapse justify-content-end">
+            <li>
+                <a routerLink="/contact" class="nav-link">Contact</a>
+            </li>
+            <li>
+                <a routerLink="/feedback" class="nav-link">Feedback</a>
+            </li>
+            <li>
+                <a *ngIf="Service.logout()" routerLink="/logout" class="nav-link">Logout</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- <div routerLink="/home">
+    </div> -->
+    
+</header>
+
+
+

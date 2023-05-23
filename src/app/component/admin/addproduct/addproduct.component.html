@@ -1,0 +1,34 @@
+<h3>Add product in Menu !!</h3>
+<div class="container">
+    <div class="col-md-6 col-lg-7 d-flex align-items-center">  
+   <form #AddProductForm="ngForm"> 
+
+    <fieldset class="form-group">
+    <label>Product Name:</label>
+    <input type="text" class="form-control"  [(ngModel)]="item.itemName" name="itemName" required >              
+    </fieldset> 
+
+    <fieldset class="form-group">
+    <label>Cost</label>
+    <input type="number" class="form-control"  [(ngModel)]="item.cost" name="cost" required>
+    </fieldset>
+    
+    <fieldset class="form-group">
+    <label>Quantity</label>
+    <input type="number" class="form-control"  [(ngModel)]="item.quantity" name="quantity" required>
+    </fieldset>
+
+    <fieldset class="form-group">
+        <label>image</label>
+        <input type="text" class="form-control"  [(ngModel)]="item.image" name="quantity" required>
+    </fieldset>
+    <fieldset class="form-group">
+        <label>Category</label>
+        <input type="number" class="form-control"  [(ngModel)]="item.categoryId" name="quantity" required>
+    </fieldset>
+    
+    <br>
+    <button type="submit" (click)="saveProduct()" class="btn btn-success">Save</button>
+</form>
+</div>
+</div>

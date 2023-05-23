@@ -1,0 +1,60 @@
+
+<a href="/Chome"><h5>Go to Dashboard</h5></a>
+<h1>Make a Payment !!</h1>
+
+<div class="container">
+    <h2>{{message1}}</h2>
+<label>Cartholder Name:</label>
+<input type="text" id="cartholder" [(ngModel)]="payment.cartholdername" placeholder="Cartholder Name"/><br>
+
+<label>Cart No:</label>
+<input type="number" id="cartno" [(ngModel)]="payment.cartno" placeholder="Cart No" maxlength='12'/><br>
+
+<label for="cart">Select cart type:</label>
+  <select name="cart" id="cart" [(ngModel)]="payment.carttype">
+    <option value="debit">Debit Cart</option>
+    <option value="Credit">Credit Cart</option>
+  </select><br>
+
+<label>Expriry month/year:</label>
+<input type="text" id="inputExpDate" [(ngModel)]="payment.expmonthyear" placeholder="MM / YY" maxlength='7'><br>
+
+<label>Enter cvv:</label>
+<input type="number" id="cvv" [(ngModel)]="payment.cvv" placeholder="CVV" maxlength='3'/><br>
+
+<button (click)="totalbill()" class="btn btn-success">Total Bill Amount</button><h3></h3>
+<input type="number"  [(ngModel)]="payment.amount" id="amount" value="{{message}}"/><br>
+</div>
+<input class="btn btn-success" type="submit" name="submit_reg" value="Make a Payment" (click)="MakePayment()" >
+
+
+
+
+<!-- 
+<h1>Make a Payment !!</h1>
+<div class="container">
+<label>Cartholder Name:</label>
+<input type="text" id="cartholder" placeholder="Cartholder Name"/><br>
+
+<label>Cart No:</label>
+<input type="number" id="cartno" placeholder="Cart No" maxlength='12'/><br>
+
+<label for="cart">Select cart type:</label>
+  <select name="cart" id="cart">
+    <option value="debit">Debit Cart</option>
+    <option value="Credit">Credit Cart</option>
+  </select><br>
+
+<label>Expriry month/year:</label>
+<input type="text" id="inputExpDate" placeholder="MM / YY" maxlength='7'><br>
+
+<label>Enter cvv:</label>
+<input type="number" id="cvv" placeholder="CVV" maxlength='3'/><br>
+
+<label>Amount:</label>
+<input type="number" id="amount" placeholder="amount" maxlength='3'/><br>
+
+<button (click)="totalbill()" class="btn btn-success">TotalBill</button><h3>{{message}}.Rs</h3>
+</div>
+
+<input type="submit" click="MakePayment()" name="checkoutbtn" class="btn btn-success" value="Make a Payment" />  -->

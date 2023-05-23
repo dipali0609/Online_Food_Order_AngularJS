@@ -1,0 +1,35 @@
+<!-- <p>adminlogin works!</p> -->
+<section class="vh-100" style="background-image: url('https://t4.ftcdn.net/jpg/01/19/11/55/360_F_119115529_mEnw3lGpLdlDkfLgRcVSbFRuVl6sMDty.jpg');">
+    <!-- <div class="container py-5 h-100"> -->
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col col-xl-10">
+          <div class="card" style="border-radius: 1rem;">
+            <div class="row g-0">
+              <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                <div class="card-body p-4 p-lg-5 text-black"> 
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROel3AScKsoURVKWZMcovILponj6k6mK2afw&usqp=CAU">  
+                  <form>
+                 <h1>Admin Login !!</h1>
+                 <div class="container">
+                 <div class=alert alert-warning *ngIf="invalidlogin">{{errorMessage}}</div>
+
+                 <div>
+                 <label>Admin name :</label>
+                 <input type="text" name="adminname" [(ngModel)]="adminname" /><br>
+
+                <label>Password :</label>
+                <input type="password" name="adminpass" [(ngModel)]="adminpass"/><br>
+
+                <input type="submit" value="Login" (click)="clicklogin()" class="btn btn-success"/> 
+               </div>
+                 </div>
+                  </form>
+  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- </div> -->
+  </section>

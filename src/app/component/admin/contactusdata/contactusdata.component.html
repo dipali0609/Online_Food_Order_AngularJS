@@ -1,0 +1,31 @@
+<br><br><br>
+<br>
+<div class="container">
+    <table class="table table-dark table-striped">
+       
+        <thead>
+            <tr>
+            
+            <th>Contact name</th>
+            <th>Contact emailid</th>
+            <th>Contact message</th>
+           
+            </tr>  
+        </thead>
+        <tbody>
+            <tr *ngFor="let contact1 of contacts">
+               
+                <td>{{contact1.contactname}}</td>
+                <td>{{contact1.contactemailid}}</td>
+                <td>{{contact1.contactmessage}}</td>
+                
+                <!-- <td><button (click)="deleteToDo(cust.id)" class="btn btn-warning">Delete</button></td>
+                <td><button (click)="updateToDo(cust.id)" class="btn btn-success">Update</button></td> -->
+            </tr>
+    
+        </tbody>
+    </table>
+    </div>
+    <br>
+    <br>
+    <!-- <button (click)="addToDo()" class="btn btn-success">AddRecord</button> -->

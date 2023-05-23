@@ -1,0 +1,32 @@
+<br><br><br>
+<br>
+<div class="container">
+    <table class="table table-dark table-striped center">
+       
+        <thead>
+            <tr>
+            
+            <th>Feedbac kname</th>
+            <th>Feedback email</th>
+            <th>Feedback subject</th>
+            <th>Feedback message</th>
+           
+            </tr>  
+        </thead>
+        <tbody>
+            <tr *ngFor="let feedback1 of feedbacks">
+               
+                <td>{{feedback1.feedbackname}}</td>
+                <td>{{feedback1.feedbackemail}}</td>
+                <td>{{feedback1.feedbacksubject}}</td>
+                <td>{{feedback1.feedbackmessage}}</td>
+                <!-- <td><button (click)="deleteToDo(cust.id)" class="btn btn-warning">Delete</button></td>
+                <td><button (click)="updateToDo(cust.id)" class="btn btn-success">Update</button></td> -->
+            </tr>
+    
+        </tbody>
+    </table>
+    </div>
+    <br>
+    <br>
+    <!-- <button (click)="addToDo()" class="btn btn-success">AddRecord</button> -->

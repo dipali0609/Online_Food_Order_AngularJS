@@ -1,0 +1,58 @@
+<html>
+
+<head>
+   
+    
+</head>
+
+<!-- <div class="container">
+    <button  (click)="addProduct()" class="btn btn-success">Add Product</button><br> -->
+    <br>
+    <br><br><br>
+    <div class="container">
+        <h1>My Cart</h1>
+        <a href="/Chome">Go To DashBoard</a>
+        <table class="table table-dark table-striped">
+   
+    <thead>
+        <tr>
+        
+        <th>Item Name</th>
+        <th>Cost</th>
+        <th>quantity</th>
+        <th>Delete Item</th>
+        </tr>  
+    </thead>
+    <tbody>
+        <tr *ngFor="let item1 of items">
+           
+            <td>{{item1.itemName}}</td>
+            <td>{{item1.cost}}</td>
+            <td>{{item1.quantity}}</td>
+           
+            <td><button (click)="deleteitem(item1.itemId)" class="btn btn-warning">Delete</button>
+            <!-- <td><button (click)="updateitem(item1.itemId)" class="btn btn-success">Update</button>
+              
+             --> 
+            <!-- <td>{{item1.cost}}*{{item1.quantity}}</td> -->
+
+            
+        </tr>
+            
+    </tbody>
+</table>
+
+
+ <button (click)="addToORder()" class="btn btn-success">Order food</button><br><br>
+ <button (click)="totalbill()" class="btn btn-success">TotalBill</button>
+</div>
+<br>
+<br>
+<!-- <button (click)="addToDo()" class="btn btn-success">AddRecord</button> -->
+
+<h1>Total Bill::{{message}}</h1>
+
+<body>
+</body>
+</html>
+
